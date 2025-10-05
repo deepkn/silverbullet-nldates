@@ -36,7 +36,7 @@ Add to your CONFIG page:
 config.set {
   plugs = {
     -- Add your plugs here 
-    "ghr:deepkn/silverbullet-nldates",
+    "github:deepkn/silverbullet-nldates/nldates.plug.js",
     ...
   },
   ...
