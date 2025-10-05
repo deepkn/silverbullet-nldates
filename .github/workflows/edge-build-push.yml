@@ -1,0 +1,27 @@
+name: Build & Push Edge
+
+on:
+  push:
+    branches:
+      - "main"
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v3
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.5.0
+      - name: Compile with Deno
+        run: |
+          deno task build
+      - name: Commit and push if on main
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add nldates.plug.js || true
+          git commit -m "[CI/CD] Auto update nldates.plug.js" || true
+          git push
