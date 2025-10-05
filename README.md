@@ -24,7 +24,7 @@ A SilverBullet plug that provides natural language date and time completion.
 
 - **Configurable Output**: Customize date/time format to your preference using CONFIG
 
-## Usage
+## Installation and Configuration
 Add to your CONFIG page and run `Plugs: Update`:
 ```yaml
 config.set {
