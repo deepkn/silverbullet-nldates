@@ -1,0 +1,25 @@
+name: nldates
+config:
+  schema.config.properties:
+    nldates:
+      type: object
+      properties:
+        dateFormat:
+          type: string
+          description: "Output format for dates (using Unicode date format patterns)"
+          default: "yyyy-MM-dd HH:mm"
+        includeTime:
+          type: boolean
+          description: "Include time in output if parsed"
+          default: true
+        timezone:
+          type: string
+          description: "Timezone for date parsing and formatting"
+          nullable: true
+      nullable: true
+functions:
+  nlDateCompleter:
+    path: "./nldates.ts:nlDateCompleter"
+    events:
+      - editor:complete
+      - minieditor:complete

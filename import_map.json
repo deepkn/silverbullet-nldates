@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "@silverbulletmd/silverbullet/syscall": "jsr:@silverbulletmd/silverbullet@2.0.0/syscall",
+    "@silverbulletmd/silverbullet/syscalls": "jsr:@silverbulletmd/silverbullet@2.0.0/syscalls",
+    "@silverbulletmd/silverbullet/type/client": "jsr:@silverbulletmd/silverbullet@2.0.0/type/client",
+    "chrono-node": "https://esm.sh/chrono-node@2.7.7"
+  }
+}

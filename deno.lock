@@ -1,0 +1,16 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@silverbulletmd/silverbullet@*": "2.0.0"
+  },
+  "jsr": {
+    "@silverbulletmd/silverbullet@2.0.0": {
+      "integrity": "6da4dfdf9b7ab83812dc6d0f0aeb6c55561e031a11f53a98e0a9602c499a52e8"
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@silverbulletmd/silverbullet@2.0.0"
+    ]
+  }
+}

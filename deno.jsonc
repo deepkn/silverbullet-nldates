@@ -1,0 +1,21 @@
+{
+  "importMap": "import_map.json",
+  "tasks": {
+    "build": "silverbullet plug:compile --debug --info --importmap import_map.json nldates.plug.yaml",
+    "watch": "silverbullet plug:compile --debug --info --importmap import_map.json nldates.plug.yaml -w"
+  },
+  "lint": {
+    "rules": {
+      "exclude": ["no-explicit-any"]
+    }
+  },
+  "fmt": {
+    "exclude": [
+      "*.md",
+      ".*.md",
+      "**/*.md",
+      "*.plug.js",
+      "**/*.plug.js"
+    ]
+  }
+}
