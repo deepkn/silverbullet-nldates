@@ -53,19 +53,6 @@ config.set {
 }
 ```
 
-```yaml
-nldates:
-  # Output format for dates (using Unicode date format patterns)
-  # Default: "yyyy-MM-dd HH:mm"
-  dateFormat: "yyyy-MM-dd"
-  
-  # Include time in output if parsed (default: true)
-  includeTime: true
-  
-  # Timezone (default: system timezone)
-  timezone: "America/New_York"
-```
-
 ## Date Format Patterns
 
 - `yyyy-MM-dd` → 2025-10-05
