@@ -1,8 +1,8 @@
 {
   "importMap": "import_map.json",
   "tasks": {
-    "build": "silverbullet plug:compile --debug --info --importmap import_map.json nldates.plug.yaml",
-    "watch": "silverbullet plug:compile --debug --info --importmap import_map.json nldates.plug.yaml -w"
+    "build": "deno check -c deno.json && deno run -A https://github.com/silverbulletmd/silverbullet/releases/download/edge/plug-compile.js --info --importmap import_map.json nldates.plug.yaml",
+    "build-dbg": "deno check -c deno.json && deno run -A https://github.com/silverbulletmd/silverbullet/releases/download/edge/plug-compile.js --debug --info --importmap import_map.json nldates.plug.yaml"
   },
   "lint": {
     "rules": {

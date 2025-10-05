@@ -10,7 +10,7 @@ A SilverBullet plug that provides natural language date and time completion.
 ## Usage
 
 1. Type `!!` followed by a natural language date
-2. A completion popup appears with your parsed dates (with memory) or quick options
+2. A completion popup appears with your parsed dates or quick options (today/tomorrow/yesterday)
 3. Examples:
    - `!!tomorrow` → Shows tomorrow's date with `[tomorrow]` label
    - `!!next friday 2pm` → Shows next Friday at 2 PM with time
@@ -22,7 +22,7 @@ A SilverBullet plug that provides natural language date and time completion.
 4. Press `Enter` to insert the formatted date
 5. Press `Escape` to cancel
 
-- **Configurable Output**: Customize date/time format to your preference
+- **Configurable Output**: Customize date/time format to your preference using CONFIG
 
 ## Installation & Configuration
 
@@ -30,7 +30,28 @@ A SilverBullet plug that provides natural language date and time completion.
 2. Run the command: `Plugs: Add`
 3. Add the plug by URL or copy the `nldates.plug.js` file to your `_plug` folder
 
-Add to your `SETTINGS` page:
+## Usage
+Add to your CONFIG page:
+```yaml
+config.set {
+  plugs = {
+    -- Add your plugs here 
+    "ghr:deepkn/silverbullet-nldates",
+    ...
+  },
+  ...
+  nldates = {
+    -- Output format for dates (using Unicode date format patterns)
+    -- Default: "yyyy-MM-dd"
+    dateFormat: "yyyy-MM-dd",
+    -- Include time in output if parsed (default: true)
+    includeTime: false,
+    -- Timezone (default: system timezone)
+    timezone: "America/New_York",
+  },
+...
+}
+```
 
 ```yaml
 nldates:
