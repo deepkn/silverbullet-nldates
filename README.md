@@ -24,14 +24,8 @@ A SilverBullet plug that provides natural language date and time completion.
 
 - **Configurable Output**: Customize date/time format to your preference using CONFIG
 
-## Installation & Configuration
-
-1. Open your SilverBullet space
-2. Run the command: `Plugs: Add`
-3. Add the plug by URL or copy the `nldates.plug.js` file to your `_plug` folder
-
 ## Usage
-Add to your CONFIG page:
+Add to your CONFIG page and run `Plugs: Update`:
 ```yaml
 config.set {
   plugs = {
