@@ -8,6 +8,18 @@
       "integrity": "6da4dfdf9b7ab83812dc6d0f0aeb6c55561e031a11f53a98e0a9602c499a52e8"
     }
   },
+  "redirects": {
+    "https://esm.sh/dayjs@^1.10.0/plugin/quarterOfYear?target=denonext": "https://esm.sh/dayjs@1.11.18/plugin/quarterOfYear?target=denonext",
+    "https://esm.sh/dayjs@^1.10.0?target=denonext": "https://esm.sh/dayjs@1.11.18?target=denonext"
+  },
+  "remote": {
+    "https://esm.sh/chrono-node@2.7.7": "4db7c7db04f6776d069719437f85d013277d1067ffe5041cebd76e7aac78a9ac",
+    "https://esm.sh/chrono-node@2.7.7/denonext/chrono-node.mjs": "3c11cadf632d9adbebb1760c3d6d83429d4467b3aa2e824bb19a4bdb1a4c9efd",
+    "https://esm.sh/dayjs@1.11.18/denonext/dayjs.mjs": "e0750be56851657705b0f0a44940ccd3ad89aa7b9838988f4acb525cdeb26633",
+    "https://esm.sh/dayjs@1.11.18/denonext/plugin/quarterOfYear.mjs": "78ee9c354c14dacd90d893cdc8997c74e6c74699031465a1811452036422c41a",
+    "https://esm.sh/dayjs@1.11.18/plugin/quarterOfYear?target=denonext": "21254244c10c2782a730f45b99589eeffe8ee0b28b5723dae42609c092b58400",
+    "https://esm.sh/dayjs@1.11.18?target=denonext": "d7fd914ff470e3a7f69ac8447bb497288e900ee187755bc45cf3be669493e5e4"
+  },
   "workspace": {
     "dependencies": [
       "jsr:@silverbulletmd/silverbullet@2.0.0"
